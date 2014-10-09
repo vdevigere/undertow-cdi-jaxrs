@@ -25,5 +25,21 @@
   		<artifactId>resteasy-undertow</artifactId>
   		<version>3.0.9.Final</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.jboss.resteasy</groupId>
+  		<artifactId>resteasy-cdi</artifactId>
+  		<version>3.0.9.Final</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.jboss.weld.servlet</groupId>
+  		<artifactId>weld-servlet</artifactId>
+  		<version>3.0.0.Alpha1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>javax</groupId>
+  		<artifactId>javaee-api</artifactId>
+  		<version>7.0</version>
+  		<scope>provided</scope>
+  	</dependency>
   </dependencies>
 </project>

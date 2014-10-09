@@ -21,6 +21,7 @@ public class MyServer {
 
     public DeploymentInfo deployApplication(String appPath, Class<? extends Application> applicationClass) {
         ResteasyDeployment deployment = new ResteasyDeployment();
+        deployment.setInjectorFactoryClass("org.jboss.resteasy.cdi.CdiInjectorFactory");
         deployment.setApplicationClass(applicationClass.getName());
         return server.undertowDeployment(deployment, appPath);
     }
@@ -35,7 +36,8 @@ public class MyServer {
                 .setClassLoader(MyServer.class.getClassLoader())
                 .setContextPath("/myApp")
                 .setDeploymentName("My Application")
-                .addServlets(Servlets.servlet("helloServlet", org.viddu.poc.HelloServlet.class).addMapping("/hello"));
+                .addServlets(Servlets.servlet("helloServlet", org.viddu.poc.HelloServlet.class).addMapping("/hello"))
+                .addListeners(Servlets.listener(org.jboss.weld.environment.servlet.Listener.class));
         myServer.deploy(di);
     }
 }
