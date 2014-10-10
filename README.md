@@ -14,5 +14,5 @@ Learn how to create a servlet container and configure it programmatically. Once 
 
 * [Lesson 2: JAX-RS(Resteasy) on Undertow](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki/Deploying-JAX-RS-Resources-and-Applications-to-Undertow)
 Enhance lesson 1 to add JAX-RS capabilities. Add Resources to your application
-* [Lesson 3: CDI (Weld) inject beans into JAX-RS resource ](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki/CDI-(Weld),-JAX-RS-(Resteasy)-on-Undertow)
+* [Lesson 3: Inject CDI managed beans into JAX-RS resources ](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki/CDI-(Weld),-JAX-RS-(Resteasy)-on-Undertow)
 Enhance lesson 2 to inject beans into your resource classes.
