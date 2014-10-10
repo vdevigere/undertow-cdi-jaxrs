@@ -9,7 +9,7 @@ Resteasy is Redhat's implementation of [(JSR 311 & JSR 339)](https://jsr311.java
 
 
 Check out the [Wiki](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki) for a details of the implementation:-
-* [Lesson 1: Servlets on Undertow](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki)
+* [Lesson 1: Servlets on Undertow](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki/Deploying-Servlets-to-Undertow.)
 Learn how to create a servlet container and configure it programmatically. Once configured attach the container to the Undertow server to serve requests.
 
 * [Lesson 2: JAX-RS(Resteasy) on Undertow](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki/Deploying-JAX-RS-Resources-and-Applications-to-Undertow)
