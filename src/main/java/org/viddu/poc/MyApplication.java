@@ -6,6 +6,8 @@ import java.util.Set;
 import javax.inject.Inject;
 import javax.ws.rs.core.Application;
 
+import org.jboss.resteasy.plugins.interceptors.RoleBasedSecurityFeature;
+
 public class MyApplication extends Application {
 
     @Inject
@@ -14,7 +16,9 @@ public class MyApplication extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         Set<Class<?>> resources = new LinkedHashSet<Class<?>>();
+        resources.add(OAuthContainerRequestFilter.class);
         resources.add(HelloResource.class);
+        resources.add(RoleBasedSecurityFeature.class);
         return resources;
     }
 
