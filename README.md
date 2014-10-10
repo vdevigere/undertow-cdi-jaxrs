@@ -16,4 +16,5 @@ Learn how to create a servlet container and configure it programmatically. Once 
 Enhance lesson 1 to add JAX-RS capabilities. Add Resources to your application
 * [Lesson 3: Inject CDI managed beans into JAX-RS resources ](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki/CDI-(Weld),-JAX-RS-(Resteasy)-on-Undertow)
 Enhance lesson 2 to inject beans into your resource classes.
-* [Lesson 4: Adding-OAuth-support-for-Restful-Webservices](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki/Lesson-4:-Adding-OAuth-support-for-Restful-Webservices)
+* [Lesson 4: Add OAuth support ](https://github.com/vdevigere/undertow-cdi-jaxrs/wiki/Lesson-4:-Adding-OAuth-support-for-Restful-Webservices)
+Example uses Facebook as the OAuth provider.
