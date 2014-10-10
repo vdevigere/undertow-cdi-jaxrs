@@ -92,6 +92,7 @@ public class OAuthContainerRequestFilter implements ContainerRequestFilter {
                     String jsonUserInfo = fbResponse.getBody();
                     logger.debug("User Details={}", jsonUserInfo);
                     UserInfo userInfo = mapper.readValue(jsonUserInfo, UserInfo.class);
+                    //Hardcoded here, but lookup the role from elsewhere.
                     userInfo.setRole("LOGGED_IN");
                     // Set SecurityContext.
                     OAuthSecurityContext fbSecurityContext = new OAuthSecurityContext(userInfo);
@@ -107,6 +108,7 @@ public class OAuthContainerRequestFilter implements ContainerRequestFilter {
             // User logged in, proceed to authorization.
             String jsonUserInfo = URLDecoder.decode(userCookie.getValue(), "UTF-8");
             UserInfo userInfo = mapper.readValue(jsonUserInfo, UserInfo.class);
+            //Hardcoded here, but lookup the role from elsewhere.
             userInfo.setRole("LOGGED_IN");
             OAuthSecurityContext fbSecurityContext = new OAuthSecurityContext(userInfo);
             requestContext.setSecurityContext(fbSecurityContext);
